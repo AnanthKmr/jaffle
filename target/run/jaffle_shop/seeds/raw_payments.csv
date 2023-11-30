@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "tutorial"."main"."raw_payments" ("id" integer,"order_id" integer,"payment_method" text,"amount" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "tutorial"."main"."raw_payments" FROM 'C:\Users\ananthkumard\Documents\test\tutorial-dbt-dagster\jaffle_shop\seeds\raw_payments.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

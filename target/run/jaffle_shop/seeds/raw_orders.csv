@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "tutorial"."main"."raw_orders" ("id" integer,"user_id" integer,"order_date" date,"status" text)
+  ;
+    -- dbt seed --
+    
+          COPY "tutorial"."main"."raw_orders" FROM 'C:\Users\ananthkumard\Documents\test\tutorial-dbt-dagster\jaffle_shop\seeds\raw_orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
